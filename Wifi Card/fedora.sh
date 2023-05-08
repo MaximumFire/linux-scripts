@@ -1,7 +1,6 @@
 # make source dir
-sourcedir = "~/source"
-mkdir $sourcedir
-cd $sourcedir
+mkdir ~/sources
+cd ~/sources
 
 # install dependencies for installation
 sudo dnf install kernel-headers kernel-devel git dkms
@@ -15,4 +14,4 @@ sudo dkms build rtl8852au -v 1.15.0.1
 sudo dkms install rtl8852au -v 1.15.0.1
 
 # load driver
-modprobe 8852au
+sudo modprobe 8852au

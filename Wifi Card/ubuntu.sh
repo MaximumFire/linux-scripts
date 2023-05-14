@@ -4,7 +4,7 @@ cd ~/sources
 
 # install dependencies for installation
 sudo apt-get update
-sudo apt-get install make gcc linux-headers-$(uname -r) build essentials git usb-modeswitch
+sudo apt-get install make gcc linux-headers-$(uname -r) git usb-modeswitch
 
 # download + install driver
 git clone https://github.com/lwfinger/rtl8852au.git
